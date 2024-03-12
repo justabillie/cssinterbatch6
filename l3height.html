@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <title>Height</title>
+
+    <style type="text/css">
+        .div1,.div2,.div3,.div4{
+            background-color: steelblue;
+            color: #fff;
+
+            padding: 20px;
+        }
+
+        .div1{
+            height: 100px;
+        }
+
+        .div2{
+            max-height: 100px;
+        }
+        /* max-width shows the box just for the content but as the window gets narrower it will adjust the box until it reachs the given size , the content will overflow */
+
+        .div3{
+            min-height: 100px;
+        }
+
+        .div4{
+            max-height: 200px;
+            min-height: 200px;
+        } 
+
+    </style>
+</head>
+<body>
+    
+    <h1>Height Vs Max-Height Vs Min-Height</h1>
+
+    <div class="div1">
+        <h1>Height</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi minima mollitia quam vel, modi delectus provident itaque! Laborum beatae fuga repudiandae ipsam provident atque eum mollitia praesentium pariatur. Nulla, iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi iste possimus nemo aliquam cupiditate aliquid quam ipsa? Nesciunt dolorem molestiae nam cum fuga totam, magnam aspernatur doloremque earum magni!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div2">
+        <h1>Max-Height</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a provident qui id distinctio facere ullam consectetur molestiae officia, exercitationem impedit numquam, suscipit earum inventore corporis consequuntur in nesciunt aliquid?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam veniam deserunt, eum cupiditate cum recusandae ut. Provident magni delectus libero maiores est, sequi similique ex cumque necessitatibus suscipit praesentium!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div3">
+        <h1>Min-Height</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a provident qui id distinctio facere ullam consectetur molestiae officia, exercitationem impedit numquam, suscipit earum inventore corporis consequuntur in nesciunt aliquid?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam veniam deserunt, eum cupiditate cum recusandae ut. Provident magni delectus libero maiores est, sequi similique ex cumque necessitatibus suscipit praesentium!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div4">
+        <h1>Max-Height & Min-Height</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a provident qui id distinctio facere ullam consectetur molestiae officia, exercitationem impedit numquam, suscipit earum inventore corporis consequuntur in nesciunt aliquid?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam veniam deserunt, eum cupiditate cum recusandae ut. Provident magni delectus libero maiores est, sequi similique ex cumque necessitatibus suscipit praesentium!
+        </p>
+    </div>
+</body>
+</html>

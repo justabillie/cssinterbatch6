@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clip Path</title>
+
+    <style>
+
+        /* use clippath circle(), ellipse() instead of borderradius it also hides overflow */
+
+        /* shapeoutside circle(), ellipse() makes the parah lines the circle or ellipe in respective orbit */
+
+        /* use clippy website to make custom polygon shapes */
+
+        .squre{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            border-radius: 50%;
+        }
+
+        .triangle{
+            width: 0;
+            height: 0;
+            /* background-color: steelblue; */
+
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid steelblue;
+
+            /* border-left: 100px solid steelblue;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid transparent; */
+
+            /* border-left: 100px solid transparent;
+            border-right: 100px solid steelblue;
+            border-bottom: 100px solid transparent; */
+            
+        }
+
+        .squareshape{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            
+            float: left;
+            margin-right: 20px;
+        }
+
+        .circleshape{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            /* border-radius: 50%;
+            overflow: hidden; */
+
+            clip-path: circle();
+            shape-outside: circle();
+
+            float: left;
+            margin-right: 20px;
+        }
+
+        .ellipseshape{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+
+                        /* ellipse(width height) */
+            clip-path: ellipse(50% 70%);
+            shape-outside: ellipse(50% 70%);
+
+            float: left;
+            margin-right: 20px;
+        }
+
+        .polygonshape{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+
+            clip-path: polygon(0% 0%, 100% 0%, 100% 27%, 62% 28%, 63% 100%, 35% 100%, 34% 28%, 0% 28%);
+            shape-outside: polygon(0% 0%, 100% 0%, 100% 27%, 62% 28%, 63% 100%, 35% 100%, 34% 28%, 0% 28%);
+
+            float: left;
+            margin-right: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="squre">Squre</div>
+
+    <hr>
+
+    <div class="circle">Circle</div>
+
+    <hr>
+
+    <div class="triangle">Triangle</div>
+
+    <hr>
+
+    <div>
+
+        <div class="squareshape">Square</div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div>
+
+        <div class="circleshape">Circle</div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div>
+
+        <div class="ellipseshape">Ellipse</div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div>
+
+        <div class="polygonshape">Polygon</div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, est itaque possimus delectus laboriosam culpa soluta totam debitis ex et ipsum officia dolorem, explicabo nobis perferendis? Eligendi quae cupiditate quaerat.
+        </p>
+
+    </div>
+    
+</body>
+</html>

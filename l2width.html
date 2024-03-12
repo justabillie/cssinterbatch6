@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <title>Width</title>
+
+    <style type="text/css">
+        
+        .div1,.div2,.div3,.div4{
+            background-color: steelblue;
+            color: #fff;
+
+            padding: 20px;
+        }
+
+        .div1{
+            width: 800px; /*min-width= max-width = 800 px also = width 800 */
+        }
+        /* width doesn't adapt with window size */
+
+        .div2{
+            max-width: 800px;
+        }
+        /* max-width shows full screen and adapts with window size until it reaches to the given size */
+
+        .div3{
+            min-width: 800px;
+        }
+        /* min-width shows exact given size and adapts with window size when less than given*/
+
+        .div4{
+            min-width: 700px;
+            max-width: 800px;
+        }
+        /* div show 800px and size will be adapted until it reaches 700px */
+    </style>
+</head>
+<body>
+
+    <h1>Width Vs Max-Width Vs Min-Width</h1>
+
+    <div class="div1">
+        <h1>Width</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi minima mollitia quam vel, modi delectus provident itaque! Laborum beatae fuga repudiandae ipsam provident atque eum mollitia praesentium pariatur. Nulla, iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi iste possimus nemo aliquam cupiditate aliquid quam ipsa? Nesciunt dolorem molestiae nam cum fuga totam, magnam aspernatur doloremque earum magni!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div2">
+        <h1>Max-Width</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a provident qui id distinctio facere ullam consectetur molestiae officia, exercitationem impedit numquam, suscipit earum inventore corporis consequuntur in nesciunt aliquid?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam veniam deserunt, eum cupiditate cum recusandae ut. Provident magni delectus libero maiores est, sequi similique ex cumque necessitatibus suscipit praesentium!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div3">
+        <h1>Min-Width</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a provident qui id distinctio facere ullam consectetur molestiae officia, exercitationem impedit numquam, suscipit earum inventore corporis consequuntur in nesciunt aliquid?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam veniam deserunt, eum cupiditate cum recusandae ut. Provident magni delectus libero maiores est, sequi similique ex cumque necessitatibus suscipit praesentium!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div4">
+        <h1>Max-Width & Min-Width</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a provident qui id distinctio facere ullam consectetur molestiae officia, exercitationem impedit numquam, suscipit earum inventore corporis consequuntur in nesciunt aliquid?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam veniam deserunt, eum cupiditate cum recusandae ut. Provident magni delectus libero maiores est, sequi similique ex cumque necessitatibus suscipit praesentium!
+        </p>
+    </div>
+    
+</body>
+</html>
